@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
-import visualViewPortResize from "visualViewportResize";
+import ItemList from "components/ItemList";
 import BottomNavigation from "components/BottomNavigation";
 
 function App() {
   const [isIOS, setIsIOS] = useState<boolean>(false);
   useEffect(() => {
     setIsIOS(/iPhone|iPad|iPod/i.test(navigator.userAgent));
-
-    if (isIOS) {
-      visualViewPortResize();
-    }
   }, [isIOS]);
 
   if (!isIOS) {
@@ -17,7 +13,7 @@ function App() {
   }
   return (
     <div className="App">
-      아이폰
+      <ItemList />
       <BottomNavigation />
     </div>
   );
