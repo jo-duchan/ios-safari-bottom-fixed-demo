@@ -17,6 +17,10 @@ html, body, #root {
     font-family: ${fontFamily};
 }
 
+#overlays {
+    pointer-events: none;
+}
+
 `;
 
 export default GlobalStyle;
