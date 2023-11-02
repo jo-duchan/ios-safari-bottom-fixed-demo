@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+import Pending from "components/Pending";
 import Chips from "components/Chips";
 import ItemList from "components/ItemList";
 import BottomNavigation from "components/BottomNavigation";
@@ -42,7 +43,7 @@ function App() {
   }, [mode]);
 
   if (!isIOS) {
-    return <div>아이폰 아님</div>;
+    return <Pending />;
   }
 
   return (
