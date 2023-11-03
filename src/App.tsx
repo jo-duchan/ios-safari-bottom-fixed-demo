@@ -17,10 +17,19 @@ function App() {
 
   useEffect(() => {
     const overlays = document.getElementById("overlays") as HTMLElement;
+    const root = document.getElementById("root") as HTMLElement;
 
     if (mode === "NONE") {
       overlays.style.position = "fixed";
       overlays.style.height = "100%";
+    }
+
+    if (mode === "ROOTSCROLLDISABLE") {
+      document.body.style.overflow = "hidden";
+      root.style.overflow = "hidden auto";
+    } else {
+      document.body.style.overflow = "auto";
+      root.style.overflow = "";
     }
 
     if (mode === "VISUALVIEWPORT") {
@@ -34,7 +43,7 @@ function App() {
       remove();
     }
 
-    if (mode === "CSS") {
+    if (mode === "POSITION") {
       overlays.style.position = "";
       overlays.style.top = "";
       overlays.style.width = "";
