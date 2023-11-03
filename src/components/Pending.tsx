@@ -4,7 +4,7 @@ function Pending() {
   return (
     <Container>
       <Title>Oops!</Title>
-      <Description>Please test it with an iPhone</Description>
+      <Description>Please test it with an iOS Safari</Description>
     </Container>
   );
 }
