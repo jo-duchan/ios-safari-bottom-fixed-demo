@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/ios-safari-bottom-fixed-demo/static/js/main.eed483bc.js",
+    "main.js": "/ios-safari-bottom-fixed-demo/static/js/main.5980d7df.js",
     "static/media/smiley.svg": "/ios-safari-bottom-fixed-demo/static/media/smiley.f658beac8fbabc7bec9dc98639afc831.svg",
     "static/media/microphone.svg": "/ios-safari-bottom-fixed-demo/static/media/microphone.a2c9c5f3847aab09470d0bffc6006b11.svg",
     "index.html": "/ios-safari-bottom-fixed-demo/index.html",
     "static/media/home.svg": "/ios-safari-bottom-fixed-demo/static/media/home.c11ee09d364c9a146760c9632250ef66.svg",
     "static/media/clip.svg": "/ios-safari-bottom-fixed-demo/static/media/clip.34a6387feb42c29bbf18c7ef4aecb166.svg",
-    "main.eed483bc.js.map": "/ios-safari-bottom-fixed-demo/static/js/main.eed483bc.js.map"
+    "main.5980d7df.js.map": "/ios-safari-bottom-fixed-demo/static/js/main.5980d7df.js.map"
   },
   "entrypoints": [
-    "static/js/main.eed483bc.js"
+    "static/js/main.5980d7df.js"
   ]
 }
