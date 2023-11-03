@@ -6,10 +6,13 @@ const list = [
     label: "None",
   },
   {
+    label: "RootScrollDisable",
+  },
+  {
     label: "VisualViewport",
   },
   {
-    label: "CSS",
+    label: "Position",
   },
 ];
 
@@ -54,7 +57,8 @@ const Container = styled.div`
   gap: 8px;
   padding-inline: 24px;
   box-sizing: border-box;
-  margin-bottom: 52px;
+  padding-bottom: 52px;
+  overflow-x: auto;
 `;
 
 const Chip = styled.div<StyledProps>`
@@ -68,4 +72,5 @@ const Chip = styled.div<StyledProps>`
   font-weight: 600;
   line-height: normal;
   transition: color, background, 150ms ease-in-out;
+  white-space: nowrap;
 `;

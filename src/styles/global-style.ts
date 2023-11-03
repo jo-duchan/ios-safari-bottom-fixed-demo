@@ -10,6 +10,10 @@ ${reset};
     -webkit-tap-highlight-color: transparent;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html, body, #root {
     width: 100%;
     height: 100%;
