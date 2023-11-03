@@ -4,14 +4,15 @@ import Pending from "components/Pending";
 import Chips from "components/Chips";
 import ItemList from "components/ItemList";
 import BottomNavigation from "components/BottomNavigation";
-import { add, remove } from "visualViewPortResize";
+import { add, remove } from "utils/visualViewPortResize";
+import detectIOSSafari from "utils/detectIOSSafari";
 
 function App() {
   const [isIOS, setIsIOS] = useState<boolean>(false);
   const [mode, setMode] = useState<string>("");
 
   useEffect(() => {
-    setIsIOS(/iPhone|iPad|iPod/i.test(navigator.userAgent));
+    setIsIOS(detectIOSSafari());
   }, [isIOS]);
 
   useEffect(() => {
