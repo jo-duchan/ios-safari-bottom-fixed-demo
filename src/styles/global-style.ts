@@ -16,7 +16,6 @@ body {
 
 html, body, #root {
     width: 100%;
-    height: 100%;
     background: #fff;
     font-family: ${fontFamily};
 }
